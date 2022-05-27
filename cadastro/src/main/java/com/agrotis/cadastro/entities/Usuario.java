@@ -12,8 +12,8 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "tb_pessoa")
-public class Pessoa {
+@Table(name = "tb_usuario")
+public class Usuario {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,7 +21,7 @@ public class Pessoa {
 
   private String name;
 
-  @OneToMany(mappedBy = "pessoa", cascade = CascadeType.ALL, orphanRemoval = true)
+  @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL, orphanRemoval = true)
   private List<Servico> servicos = new ArrayList<Servico>();
 
   public void addServico(Servico servico) {
