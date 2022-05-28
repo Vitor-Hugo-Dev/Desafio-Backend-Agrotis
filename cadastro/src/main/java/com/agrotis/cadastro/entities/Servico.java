@@ -32,16 +32,14 @@ public class Servico {
   @JoinColumn(name = "laboratorio_id")
   private Laboratorio laboratorio;
 
-  @ManyToOne
-  @JoinColumn(name = "pessoa_id")
-  private Pessoa pessoa;
+  private String usuario;
 
-  public Pessoa getPessoa() {
-    return this.pessoa;
+  public String getUsuario() {
+    return this.usuario;
   }
 
-  public void setPessoa(Pessoa pessoa) {
-    this.pessoa = pessoa;
+  public void setUsuario(String usuario) {
+    this.usuario = usuario;
   }
 
   public Laboratorio getLaboratorio() {
