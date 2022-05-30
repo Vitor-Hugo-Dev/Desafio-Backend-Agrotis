@@ -8,15 +8,18 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import com.agrotis.cadastro.entities.Laboratorio;
-import com.agrotis.cadastro.entities.Propriedade;
-import com.agrotis.cadastro.entities.Servico;
-import com.agrotis.cadastro.exceptions.DatasException;
-import com.agrotis.cadastro.exceptions.LaboratorioNaoEncontradoException;
-import com.agrotis.cadastro.exceptions.PropriedadeNaoEncontradaException;
-import com.agrotis.cadastro.exceptions.ServicoNaoEncontradoException;
-import com.agrotis.cadastro.exceptions.UsuarioInvalidoException;
-import com.agrotis.cadastro.repositories.ServicoRepository;
+import com.agrotis.cadastro.aplication.laboratorio.service.LaboratorioService;
+import com.agrotis.cadastro.aplication.propriedade.service.PropriedadeService;
+import com.agrotis.cadastro.aplication.servico.service.ServicoService;
+import com.agrotis.cadastro.domain.laboratorio.exception.LaboratorioNaoEncontradoException;
+import com.agrotis.cadastro.domain.laboratorio.model.Laboratorio;
+import com.agrotis.cadastro.domain.propriedade.exception.PropriedadeNaoEncontradaException;
+import com.agrotis.cadastro.domain.propriedade.model.Propriedade;
+import com.agrotis.cadastro.domain.servico.exception.DatasException;
+import com.agrotis.cadastro.domain.servico.exception.ServicoNaoEncontradoException;
+import com.agrotis.cadastro.domain.servico.exception.UsuarioInvalidoException;
+import com.agrotis.cadastro.domain.servico.model.Servico;
+import com.agrotis.cadastro.infrastructure.persistence.hibernate.repository.servico.ServicoRepository;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
