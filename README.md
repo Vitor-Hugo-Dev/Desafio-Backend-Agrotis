@@ -23,7 +23,7 @@
 
 ### Instalação:
 - clone este repositório  ` git clone git@github.com:Vitor-Hugo-Dev/Desafio-Backend-Agrotis.git`
-- navegue do diretório cadastro e instale as dependências: ` cd cadastro && mvn install`
+- navegue até o diretório cadastro e instale as dependências: ` cd cadastro && mvn install`
 - execute a aplicação:  `mvn spring-boot:run`
 
 ### Rotas:
